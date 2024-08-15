@@ -287,7 +287,7 @@ a {
   position: absolute;
   left: 50.5%;
   bottom: 82.7%;
-  z-index: -1;
+  z-index: -3;
 }
 @media (max-width: 1199px) {
   .container .bgShape {
@@ -397,8 +397,8 @@ a {
 }
 @media (max-width: 991px) {
   .container .content #main .text p:first-child .daawa::before {
-    right: 165px;
-    top: 205px;
+    right: 160px;
+    top: 295px;
   }
 }
 @media (max-width: 767px) {
@@ -1049,9 +1049,15 @@ a {
     transform: scaleY(-1) rotate(8.3deg);
   }
 }
+@media (max-width: 768px) {
+  #footer .curved-banner {
+    transform: scaleY(-1) rotate(11deg);
+    top: 10px;
+  }
+}
 @media (max-width: 576px) {
   #footer .curved-banner {
-    transform: scaleY(-1) rotate(12.3deg);
+    transform: scaleY(-1) rotate(13.3deg);
   }
 }
 /* end curved banner */
@@ -1076,6 +1082,12 @@ a {
 @media (max-width: 991px) {
   #footer .second-curved-banner {
     transform: scaleY(-1) rotate(7.6deg);
+  }
+}
+@media (max-width: 768px) {
+  #footer .second-curved-banner {
+    transform: scaleY(-1) rotate(10.5deg);
+    top: -100px;
   }
 }
 @media (max-width: 576px) {
@@ -1246,15 +1258,17 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 2%;
+  padding: 0 10px;
   direction: rtl;
   color: var(--white-color);
 }
 
 @media (max-width: 576px) {
   #footer .inner-footer {
-    gap: 10px;
+    position: relative;
     justify-content: center;
+    height: 150px;
+    bottom: 30px;
   }
 }
 #footer .inner-footer .right-text {
