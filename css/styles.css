@@ -309,7 +309,7 @@ a {
 @media (max-width: 576px) {
   .container .bgShape {
     top: -6%;
-    left: 455px;
+    left: 390px;
     z-index: -1;
     border: 1px;
     rotate: -89.64deg;
